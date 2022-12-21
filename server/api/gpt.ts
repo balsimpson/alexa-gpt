@@ -8,7 +8,7 @@ export default defineEventHandler(async (event) => {
 	const openai = new OpenAIApi(configuration);
 	// console.log(event)
 	const query = getQuery(event)
-	const body = await readBody(event)
+	// const body = await readBody(event)
 
 	// OpenAI settings
 	let model = "text-davinci-003";
