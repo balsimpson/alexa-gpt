@@ -12,12 +12,10 @@ export default defineNuxtConfig({
       },
     css: ["~/assets/css/styles.css"],
     modules: ['@nuxtjs/tailwindcss'],
-    // publicRuntimeConfig: {
-    //   FIREBASE_API_KEY: process.env.FIREBASE_API_KEY,
-    //   FIREBASE_PROJECT_ID: process.env.FIREBASE_PROJECT_ID
-    // },
-    // privateRuntimeConfig: {
-    //   FIREBASE_API_KEY: process.env.FIREBASE_API_KEY,
-    //   FIREBASE_PROJECT_ID: process.env.FIREBASE_PROJECT_ID
-    // },
+    publicRuntimeConfig: {
+      OPENAI_KEY: process.env.OPENAI_KEY,
+    },
+    privateRuntimeConfig: {
+      OPENAI_KEY: process.env.OPENAI_KEY,
+    },
 })
