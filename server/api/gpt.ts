@@ -23,9 +23,11 @@ export default defineEventHandler(async (event) => {
 			temperature: temperature,
 		});
 
-		return { prediction }
+		return { 
+			result: prediction.data.choices[0].text 
+		}
 	} catch (error) {
 		console.log(error);
-		return { error }
+		return error
 	}
 })
